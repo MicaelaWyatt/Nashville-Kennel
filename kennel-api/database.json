@@ -11,7 +11,28 @@
             "address": "7002 Chestnut Ct"
         }
     ],
-    "employees": [],
+    "employees": [
+        {
+            "id":1,
+            "name":"Noa",
+            "location": "Nashville North"
+        },
+        {
+            "id":2,
+            "name":"Esme",
+            "location":"Nashville South"
+        }, 
+         {
+            "id":3,
+            "name":"Emily",
+            "location": "Nashville East"
+        },
+        {
+            "id":4,
+            "name":"Jasmine",
+            "location":"Nashville West"
+        }
+    ],
     "locations": [
         {
             "id": 1,
@@ -22,6 +43,38 @@
             "id": 2,
             "name": "Nashville South",
             "address": "209 Emory Drive"
+        },
+        {
+            "id":3,
+            "name":"Nashville East",
+            "address":"7002 Chestnut Ct"
+        },
+        {
+            "id":4,
+            "name":"Nashville West",
+            "address":"458 kimye Drive"
+        }
+    ],
+    "owners": [
+        {
+            "id":1,
+            "name":"Ashley",
+            "location":"Nashville North"
+        },
+        {
+            "id":2,
+            "name": "John",
+            "location":"Nashville South"
+        },
+        {
+            "id":3,
+            "name": "Ryder",
+            "location":"Nashville East"   
+        },
+        {
+            "id":4,
+            "name": "Sid",
+            "location":"Nashville West"   
         }
     ]
 }
