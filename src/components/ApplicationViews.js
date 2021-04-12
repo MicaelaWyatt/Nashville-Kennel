@@ -1,11 +1,11 @@
 import React from "react"
 import { Route } from "react-router-dom"
 import { Home } from "../Home"
-import {AnimalCard} from "./animal/AnimalCard"
-import {EmployeeCard} from "./employee/EmployeeCard"
-import {CustomerCard} from "./customer/CustomerCard"
-import {LocationCard} from "./location/LocationCard"
 import { AnimalList } from "./animal/AnimalList"
+import {EmployeeList} from "./employee/EmployeeList"
+import {LocationList} from "./location/LocationList"
+import {CustomerList} from "./customer/CustomerList"
+import {AnimalDetail} from "./animal/AnimalDetail"
 
 export const ApplicationViews = () => {
     return (
@@ -16,17 +16,20 @@ export const ApplicationViews = () => {
             </Route>
 
             {/* Render the animal list when http://localhost:3000/animals */}
-            <Route path="/animals">
+            <Route exact path="/animals">
               <AnimalList />
             </Route>
+            <Route path="/animals/:animalId(\d+)">
+                <AnimalDetail />
+            </Route>
             <Route path="/locations">
-                <LocationCard />
+                <LocationList />
             </Route>
             <Route path="/employees">
-                <EmployeeCard />
+                <EmployeeList />
             </Route>
             <Route path="/customers">
-                <CustomerCard />
+                < CustomerList/>
             </Route>
         </>
     )
